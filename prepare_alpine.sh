@@ -1,4 +1,4 @@
-echo "Entering /prepare.sh"
+echo "Entering /prepare_alpine.sh"
 
 if [ ! -f "/app/app.yaml" ]
 then

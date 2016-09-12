@@ -1,7 +1,8 @@
 ## Description
 
-This Docker image is base image for Python apps.  
-It uses **app.yaml** file located in child Docker image.  
+This Docker image is simple base image for Python apps.  
+It uses **app.yaml** manifest file located in child Docker image.  
+
 **app.yaml** describe OS dependencies needed by Python packages during installation of Python packages enlisted inside standard **requirements.txt** file. It distincts build time and run time dependencies. So for example during Python package installation you will need to have header files for libraries and various compilers like **gcc**. But after installation is complete you will needed only libraries itself without headers and compilers which uses usually more then 200 MBytes.  
 ## Usage
 Use one of following base images for your image.
