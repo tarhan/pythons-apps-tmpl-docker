@@ -1,4 +1,4 @@
-FROM python:2.7.12-alpine
+FROM python:3.6.0-alpine
 
 MAINTAINER Dmitriy Lekomtsev <lekomtsev@gmail.com>
 
