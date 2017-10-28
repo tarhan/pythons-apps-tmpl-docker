@@ -7,9 +7,8 @@ It uses **app.yaml** manifest file located in child Docker image.
 ## Usage
 Use one of following base images for your image.
 ```
-tarhan/python-base:2.7.13 - for Python 2.7.13
-tarhan/python-base:3.5.3 - for Python 3.5.3
-tarhan/python-base:3.6.0 - for Python 3.6.0
+tarhan/python-base:3.5.4 - for Python 3.5.4
+tarhan/python-base:3.6.3 - for Python 3.6.3
 ```
 
 Your child image must have at least two files **app.yaml** describing OS dependencies and **requirements.txt** describing Python dependencies.  
@@ -32,4 +31,4 @@ dependencies:
       - libxml2-dev
       - libxslt-dev
 ```
-This example OS dependencies needed by Python package **Scrapy**. During child image building OS installs more than 200 MBytes of buildtime dependencies. After **Scrapy** building complete all buildtime dependencies will be removed. Remaining OS libraries will require only 4 MBytes instead of potensial 200 MBytes.
+This example OS dependencies needed by Python package **Scrapy**. During child image building OS installs more than 200 MBytes of build time dependencies. After **Scrapy** building complete all build time dependencies will be removed. Remaining OS libraries will require only 4 MBytes instead of potential 200 MBytes.
